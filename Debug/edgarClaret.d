@@ -1,0 +1,1 @@
+edgarClaret.d: ../edgarClaret.c
