@@ -3589,6 +3589,25 @@ void display(){
 	//glCallLists(strlen(str_buf), GL_BYTE, str_buf);
 	large_font(d0, d1, d2,str_buf);
 
+	d1 -= .3;
+	sprintf(str_buf,"Number of Particles  %i",n1);
+	large_font(d0, d1, d2,str_buf);
+
+	//Print Thread or What
+	d1 += 5.6;
+
+	if (grape_flg == 1){
+
+	sprintf(str_buf,"Threads on     #Threads = %d",NUMT);
+	large_font(d0, d1, d2,str_buf);
+	}
+	else{
+		sprintf(str_buf,"Threads off");
+		large_font(d0, d1, d2,str_buf);
+	}
+
+
+
 ///////////////
 	glEnable(GL_LIGHTING);
     d0 = 1.8;
@@ -3720,7 +3739,7 @@ void motion(int x, int y)
 
 int main(int argc, char **argv){
   //Number of Particles according to the keyboard numbers
-	np = 3;
+	np = 6;
 	temp = 300;
 	sub_x = 1.5;
 	sub_y = 1.5;

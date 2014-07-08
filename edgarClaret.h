@@ -14,7 +14,7 @@
 #include <sys/time.h>
 #include <pthread.h>
 #include <sched.h>
-#define NUMT     1
+#define NUMT     6
 
 //////////////////////////Directives Definition
 
